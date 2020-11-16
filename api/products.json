@@ -1,0 +1,62 @@
+{
+  "products": {
+    "00001": {
+      "NAME": "Сыр плавленный брикет \"Crema\"",
+      "MASS": "70гр",
+      "STORAGE_CONDITION": "120 діб- при t от 0 ° С до + 6° С",
+      "IMG": "/images/product-popup.png",
+      "COLOR": "#83CBEC",
+      "CHARACTERISTICS": [
+        {
+          "NAME": "Жирность",
+          "VALUE": "45%"
+        },
+        {
+          "NAME": "Белки",
+          "VALUE": "9,0 g (г)"
+        },
+        {
+          "NAME": "Жиры",
+          "VALUE": "18,0 g (г)"
+        },
+        {
+          "NAME": "Углеводы",
+          "VALUE": "5,7 g (г)"
+        },
+        {
+          "NAME": "Каллорийность",
+          "VALUE": "221 kcal (ккал)"
+        }
+      ]
+    },
+    "00002": {
+      "NAME": "Сыр плавленный брикет \"Crema\"",
+      "MASS": "70гр",
+      "STORAGE_CONDITION": "120 діб- при t от 0 ° С до + 6° С",
+      "IMG": "/images/product-popup.png",
+      "COLOR": "#8c71ad",
+      "CHARACTERISTICS": [
+        {
+          "NAME": "Жирность",
+          "VALUE": "45%"
+        },
+        {
+          "NAME": "Белки",
+          "VALUE": "9,0 g (г)"
+        },
+        {
+          "NAME": "Жиры",
+          "VALUE": "18,0 g (г)"
+        },
+        {
+          "NAME": "Углеводы",
+          "VALUE": "5,7 g (г)"
+        },
+        {
+          "NAME": "Каллорийность",
+          "VALUE": "221 kcal (ккал)"
+        }
+      ]
+    }
+  }
+}
