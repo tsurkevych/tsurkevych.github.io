@@ -1,0 +1,22 @@
+{
+	"name": "Molendam",
+	"short_name": "Molendam",
+	"start_url": "/",
+	"icons": [
+		{
+			"src": "/images/favicons/android-chrome-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/images/favicons/android-chrome-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any maskable"
+		}
+	],
+	"theme_color": "#35302c",
+	"background_color": "#d1c3df",
+	"display": "standalone"
+}
