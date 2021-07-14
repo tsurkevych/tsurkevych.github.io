@@ -42,7 +42,7 @@
  - `<label class="accordion__btn" for="faq-item_1"></label>`
   
 у них є атрибут **for**, який повинен відповідати id `<input class="accordion__input" id="faq-item_1" type="checkbox" hidden>`.
-### Налаштування collapsed (services)
+## Налаштування collapsed (services)
 ``` html
 <ul class="table">
 	<li class="row table__row">
@@ -103,38 +103,49 @@
 Розкривання/закривання елементів стилями.
 
 У кожного елемента є `<input class="collapsed__input" id="service-item_1" type="checkbox" hidden="">` з унікальним **id**, і елемент, який "контролюює" цей контрол `<label class="collapsed__btn" for="service-item_1">...<label>`, у нього є атрибут **for**, який повинен відповідати id `<input class="collapsed__input" id="service-item_1" type="checkbox" hidden="">`.
-### Партнери
+## Партнери
 Для ініціалізації слайдера з партнерами потрбно на елмент слайдера додати атрибут **data-partners**
 
-### Налаштування карти
+## Налаштування карти
 
 Для ініціалізації карти потрбно вставити наступну розмітку
 ``` html
 <div data-is="Map"
 	data-params='{
-		"map": { "lat": 46.48080463063726, "lon": 30.725288987159733, "zoom": 17 },
-		"markers": [
-			{
-				"url": "marker-map",
-				"pos": [46.48080463063726, 30.725288987159733]
+		"key": "AIzaSyAxswIejDWpseAp-WrU50SbiD5AWvPk2tY",
+		"map": {
+			"center": {
+				"lat": 46.48080463063726,
+				"lng": 30.725288987159733
+			},
+			"version": "weekly",
+			"zoom": 17,
+			"disableDefaultUI": true,
+			"mapId": "fa2ef11a77485cae"
+		},
+		"marker": {
+			"url":  "marker-map",
+			"position":  {
+				"lat": 46.48080463063726,
+				"lng": 30.725288987159733
 			}
-		]
+		}
 	}'>
 </div>
 ```
 
-**data-map-center** атрибут, який можна додавати на елемент, при кліку на який выібувається центрування карти по координатах **dataParams.map**
+**data-map-center** атрибут, який можна додавати на елемент, при кліку на який відбувається центрування карти по координатах
 
 в **data-params** передаємо JSON з налаштуваннями карти
 
-- **map** - налаштування карти
-- - **lat/lon** - координати
-- - **zoom** - zoom
+- **key** - api_key потрібно замінити на свій
+- **map {}** - налаштування карти ([google maps api](https://developers.google.com/maps/documentation/javascript/overview?hl=ru))
+- - **mapId** - id карти (стилізація)
 - **markers {}** - налаштування маркерів (може приймати кілька маркерів)
-- - **url** - зображення маркера (зы спрайта)
-- - **pos** - координати
+- - **url** - зображення маркера (зі спрайта)
+- - **position** - координати
 
-### Попап / форма
+## Попап / форма
 
 Блок **data-is="RequestInformation"** підключаємо лише на тих сторінках, де буде відкриватись попап
 Для відкриття попапа на елемент (кнопку) додаємо атрибут **data-open-popup** за параметрами (JSON), в які передаємо параметри запиту (вони додадуться до інших параметрів, які описані нижче при відправленні даних на сервер). Якщо таких параметрыв немає, потрібно передати пустий об’єкт `data-open-popup='{}'`
@@ -204,7 +215,7 @@
 					"code": "PHONE",
 					"value": "",
 					"error": false,
-					"mask": "+38 (0##) ###-##-##",
+					"mask": "+38 (0##) ##-##-##",
 					"type": "tel",
 					"regex": ["empty", "tel"],
 					"labels": ["Введите Телефон", "Введите правильный телефон"]
